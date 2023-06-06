@@ -2,7 +2,7 @@
 
 ### 조건
 
-- 상자 형태의 모양인 StockContentsBox를 만들것
+- 상자 형태의 모양인 StockContentsBox를 만들 것.
 - StockContentsBox 안에는 다음과 같은 컴포넌트가 들어간다.
   - StockName
   - StockPrice
