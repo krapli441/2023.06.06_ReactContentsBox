@@ -8,7 +8,12 @@ import App from "./App";
 // import "./components/css/root";
 
 // ? CSS 모듈
+import Style from "./components/css/style.module.css";
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
 
-root.render(<App />);
+root.render(
+  <div className={Style.root}>
+    <App />
+  </div>
+);
