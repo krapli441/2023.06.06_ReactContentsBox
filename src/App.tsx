@@ -9,9 +9,11 @@ import Bottom from "./components/views/bottom";
 export default function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Bottom />
+      <div className="container">
+        <Header />
+        <Main />
+        <Bottom />
+      </div>
     </>
   );
 }
