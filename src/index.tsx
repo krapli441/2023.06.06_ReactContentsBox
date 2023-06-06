@@ -5,7 +5,9 @@ import { createRoot, Root } from "react-dom/client";
 
 // ? 리액트 컴포넌트
 import App from "./App";
-import "./components/css/root";
+// import "./components/css/root";
+
+// ? CSS 모듈
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
 

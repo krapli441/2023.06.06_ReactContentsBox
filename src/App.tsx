@@ -8,14 +8,17 @@ import Bottom from "./components/views/bottom";
 
 // ? CSS 모듈
 import ContainerStyle from "./components/css/style.module.css";
+import rootStyle from "./components/css/root.css";
 
 export default function App() {
   return (
     <>
-      <div className={ContainerStyle.container}>
-        <Header />
-        <Main />
-        <Bottom />
+      <div className={rootStyle.root}>
+        <div className={ContainerStyle.container}>
+          <Header />
+          <Main />
+          <Bottom />
+        </div>
       </div>
     </>
   );
