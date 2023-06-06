@@ -1,4 +1,5 @@
 import React from "react";
+import ContainerStyle from "./components/css/style.module.css";
 
 export default function ContentsBox() {
   return (
