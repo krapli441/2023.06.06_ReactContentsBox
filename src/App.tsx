@@ -6,10 +6,13 @@ import Header from "./components/views/header";
 import Main from "./components/views/main";
 import Bottom from "./components/views/bottom";
 
+// ? CSS 모듈
+import ContainerStyle from "./components/css/style.module.css";
+
 export default function App() {
   return (
     <>
-      <div className="container">
+      <div className={ContainerStyle.container}>
         <Header />
         <Main />
         <Bottom />
