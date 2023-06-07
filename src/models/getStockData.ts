@@ -22,7 +22,7 @@ async function getIntervalInfo(symbol: string) {
       const intervalData = timeSeries[key];
       console.log(`시간 : ${timeSeries[key]}`);
       console.log(`시가 : ${intervalData["1. open"]}`);
-      console.log(`시가 : ${intervalData["4. close"]}`);
+      console.log(`종가 : ${intervalData["4. close"]}`);
     }
   } catch (error) {
     console.error(error);

@@ -1,15 +1,24 @@
 import React from "react";
-import ContainerStyle from "./components/css/style.module.css";
 
-export default function ContentsBox() {
+interface ContentsBoxProps {
+  stockName: string;
+  stockPrice: string;
+  stockChangePercentage: string;
+  stockChartGraph: string;
+  open: string;
+  close: string;
+}
+
+export default function ContentBox(props: ContentsBoxProps) {
+  const { stockName, stockPrice, stockChangePercentage, stockChartGraph } =
+    props;
+
   return (
-    <>
-      <div className="StockContentsBox">
-        <div className="StockName">애플</div>
-        <div className="StockPrice">179.58 USD</div>
-        <div className="StockChangePercentage">-1.37%</div>
-        <div className="StockChartGraph">Graph</div>
-      </div>
-    </>
+    <div className="stockContentsBox">
+      <div className="stockName">{stockName}</div>
+      <div className="stockPrice">{stockPrice}</div>
+      <div className="stockChangePercentage">{stockChangePercentage}</div>
+      <div className="stockChartGraph">{stockChartGraph}</div>
+    </div>
   );
 }
