@@ -11,7 +11,7 @@ async function getIntervalInfo(symbol: string) {
     const timeSeries = responseData["Time Series (5min)"]; // 5분마다의 주식 정보를 포함하는 객체
     await fs.writeFile(
       "./data/AAPL.json",
-      JSON.stringify(responseData),
+      JSON.stringify(timeSeries),
       (error) => {
         if (error) {
           console.log(error);
